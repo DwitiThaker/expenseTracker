@@ -33,16 +33,12 @@ https://ownmycash.netlify.app/
 
 ## Screenshots
 
-Add images in a `screenshots/` folder and reference like:
 
-```markdown
-![Dashboard](./screenshots/dashboard.png)
+![Dashboard](https://github.com/user-attachments/assets/0ab1231d-46be-445d-b213-277b72df6bc1)
 
-```
 
-(You can remove this section if you don't have screenshots yet.)
+![Transactions](https://github.com/user-attachments/assets/ce53bce6-0e72-4409-8d29-bb98601e26cd)
 
-* * * * *
 
 Tech Stack
 ----------
@@ -116,37 +112,6 @@ Usage
 
 5.  All data persists until browser refresh (or longer if you later add localStorage).
 
-* * * * *
-
-Build Scripts
--------------
-
-| Command | Description |
-| --- | --- |
-| `npm run dev` | Start local development server |
-| `npm run build` | Create optimized production build |
-| `npm run preview` | Preview the production build locally |
-| `npm run lint` | Run ESLint analysis |
-
-* * * * *
-
-Netlify Deployment
-------------------
-
-For Netlify (Vite + React) configure these build settings:
-
--   **Base directory:** *(leave empty unless your project is in a subfolder)*
-
--   **Build command:** `npm run build`
-
--   **Publish directory:** `dist`
-
-Add a `_redirects` or `netlify.toml` for SPA routing (optional). Example `_redirects` file content:
-
-```
-/*    /index.html   200
-
-```
 
 * * * * *
 
@@ -191,58 +156,14 @@ The app uses a centralized state pattern based on:
 
 -   **Reducer (`AppReducer.jsx`)** --- handles state transitions in a predictable way.
 
-Typical state shape:
 
-```
-{
-  transactions: [
-    { id: 1, text: "Salary", amount: 5000 },
-    { id: 2, text: "Groceries", amount: -200 }
-  ]
-}
 
-```
-
-Actions:
-
--   `ADD_TRANSACTION` --- adds a transaction object with id, text, and amount
-
--   `DELETE_TRANSACTION` --- removes a transaction by id
-
-### Component Overview
-
--   **Header** --- App title and basic navigation (if any)
-
--   **Balance** --- Displays current balance computed from transactions
-
--   **IncomeExpense** --- Shows total income and total expense breakdown
-
--   **TransactionList** --- Lists all transactions with delete option
-
--   **Transaction** --- Single transaction row (amount sign determines styling)
-
--   **AddTransaction** --- Form to add a new income/expense
-
-* * * * *
-
-License
--------
-
-This project is licensed under the **MIT License**. See [LICENSE](https://chatgpt.com/LICENSE) for full text (or add an MIT LICENSE file at repo root).
-
-Short MIT header:
-
-```
 MIT License
 
 Copyright (c) 2025 Dwiti Thaker
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
-...
 
-```
-
-(Include the full MIT text in a `LICENSE` file.)
 
 * * * * *
 
@@ -253,10 +174,5 @@ Contact
 **GitHub:** <https://github.com/DwitiThaker>\
 **Project:** <https://github.com/DwitiThaker/expenseTracker>
 
-
-```
-
-
-::contentReference[oaicite:0]{index=0}
 
 ```
