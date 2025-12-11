@@ -27,7 +27,7 @@ The design focuses on simplicity, clarity, and performance.
 
 ## Live Demo
 
-https://ownmycash.netlify.app/
+(https://owmycash.netlify.app/)
 
 ---
 
